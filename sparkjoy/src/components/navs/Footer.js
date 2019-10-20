@@ -72,15 +72,14 @@ Workplace Giving
                     </li>
                   </ul>
                 </div>
-                <div className="col-md-4 mb-md-0 mb-3">
-                  <h5>STAY CONNECTED</h5>
-                  <img src="https://www.freeiconspng.com/uploads/logo-twitter-circle-png-transparent-image-1.png" className="border-round" style={{ width: "50px", height: "50px", float: "left"}}></img>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" className="border-round" style={{ width: "50px", height: "50px", float: "left", marginLeft: "30px"}}></img>
-                  <img src="https://images.vexels.com/media/users/3/137399/isolated/preview/47c9900ae893cbed1e1599ab9c8bcb18-pinterest-icon-logo-by-vexels.png" className="border-round" style={{ width: "50px", height: "50px", float: "left", marginLeft: "30px"}}></img>
+                <div className="col-md-4 mb-md-0 mb-3 mt-30">
+        
+                  <img src="https://www.freeiconspng.com/uploads/logo-twitter-circle-png-transparent-image-1.png" className="border-round" style={{ width: "50px", height: "50px", float: "left",marginTop:"40px"}}></img>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" className="border-round" style={{ width: "50px", height: "50px", float: "left", marginLeft: "30px",marginTop:"40px"}}></img>
+                  <img src="https://images.vexels.com/media/users/3/137399/isolated/preview/47c9900ae893cbed1e1599ab9c8bcb18-pinterest-icon-logo-by-vexels.png" className="border-round" style={{ width: "50px", height: "50px", float: "left", marginLeft: "30px",marginTop:"40px"}}></img>
                   <div>
-                    <h6 style={{ clear: "both", marginTop: "70px" }}>By giving people the power to share, we're making the world more transparent.   </h6>
-                    <input style={{ background: "transparent", color: "white" }}></input>
-                    <button style={{ marginLeft: "20px", background: "gray", border: "1px solid gray", color: "white" }}>SUBSCRIBE</button>
+
+
                   </div>
                 </div>
               </div>

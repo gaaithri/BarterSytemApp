@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {createItem} from '../../store/actions/itemActions'
-
+import {Link} from 'react-router-dom'
 class Donationcreate extends Component {
   state = {
     name: '',
@@ -53,10 +53,10 @@ uploadHandler = ()=> {console.log(this.state.image)
             {/* document.getElementById("uploadFile").value = this.value.substring(12);value = fileInput.value.replace("C:\\fakepath\\", ""); onChange={this.handleChange} /> */}
             <label htmlFor="type">Item Image</label>
            {/* Upload : to store image in the db  */}
-           <button onClick={this.uploadHandler}>Upload</button>
+     <button onClick={this.uploadHandler}>Upload</button> }
           </div>
           <div className="input-field">
-            <button className="btn pink lighten-1">Create</button>
+       <Link to="/thankDonor" >  <button className="btn pink lighten-1">Create</button> </Link>  
           </div>
         </form>
       </div>
