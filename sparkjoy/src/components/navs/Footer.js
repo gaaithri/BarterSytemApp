@@ -8,16 +8,16 @@ export default class Footer extends Component {
             <div>
               <br></br>
                <Container fluid>
-               <footer class="api-footer">
+               <footer className="api-footer">
                 <div>
-                  SparkUI
+                  USparkYou
                     <span>&copy; 2019 creativeLabs.</span>
                       </div>
                         <div className="ml-auto">
                           <span>Powered by</span>
                           <h5>MASAI</h5>
                          </div>
-                        </footer>
+                        </footer> 
              </Container>   
          </div>
         )

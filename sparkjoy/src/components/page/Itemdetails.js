@@ -12,8 +12,8 @@ const Itemdetails = (props) => {
                     <p> Lorem Ipsum dolor sit amet consetecuteur audisocing elit.Asperaten</p>
                 </div>
                 <div className="card-action">
-                    <div>Donated by : Happy</div> 
-                    <div> Donated on:23 Sept </div>
+                    <div>Donated by : Raju</div> 
+                    <div> Donated on:04 Oct </div>
                 </div>
                </div>
             </div>

@@ -1,15 +1,17 @@
 import React from 'react'
 import Donationdetails from './Donationdetails'
-const Itemlist = () => {
+const Itemlist = ({items}) => {
     return(
         <div className="itemList">
-            <Donationdetails />
-            <Donationdetails />
-            <Donationdetails />
-
+            {items && items.map(item =>{
+                return(
+                    <Donationdetails item={item} key={item.id} />
+                )
+            }) }
             
 
            
+
          </div>
         )
     }
