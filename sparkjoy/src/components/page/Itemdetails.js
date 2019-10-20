@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {firestoreConnect} from 'react-redux-firebase'
 import {compose} from 'redux'
+import {Link} from 'react-router-dom'
 
 const Itemdetails = (props) => {
    const{item}  = props;
@@ -10,10 +11,8 @@ const Itemdetails = (props) => {
     <div className="container section project-details">
     <div className="card-content">
     <div  className="image">
-        
          <span className = "card-title">
          <p> <h5>See details below of the chosen product</h5> </p>
-         
          {item.name}</span>
           <p><span >{item.msg}</span>  </p>
     </div>
@@ -21,7 +20,8 @@ const Itemdetails = (props) => {
     <div className="card-action">
         <div>Donated by :{item.dname} </div> 
         <div> Donated on:23 Sept </div>
-        <div><button> Get the Spark </button></div>
+        <div> <Link to = {"/thankGiftee"} ><button> Get the Spark </button></Link>
+         </div>
     </div>
    </div>
 </div>
@@ -54,4 +54,4 @@ firestoreConnect([
 ])
 )(Itemdetails);
 
- 
+
