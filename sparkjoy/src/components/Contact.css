@@ -1,0 +1,13 @@
+.contact {
+    background: linear-gradien(#C33764,#1D2671);
+   margin-left: 200px;
+   margin-top: 20px;
+}
+
+.backgroundcolor {
+    background: linear-gradient(#C33764,rgb(140, 44, 143));
+}
+
+.colortext {
+    color:whitesmoke !important;
+}

@@ -6,13 +6,21 @@ const Signed = () => {
  return(
      <ul className="right">
     <li>
-    <NavLink to="/Donations">Donations </NavLink> 
+
+    {/* <NavLink to="/Donations">WishList </NavLink>  */}
   </li>
+  <li>
+
+     <NavLink to="/wishlist">WishList </NavLink> 
+</li>
   <li>
     <NavLink to="/Giftee">Gifts   </NavLink>
   </li>
   <li>
     <NavLink to="/donationcreate">Donate Gifts   </NavLink>
+  </li>
+  <li>
+    <NavLink to="/requestcreate">Request Gifts   </NavLink>
   </li>
   <li>
     <NavLink to="/" className='userlogo'> SPJ</NavLink>
