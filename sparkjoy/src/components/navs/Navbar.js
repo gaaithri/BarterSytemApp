@@ -28,9 +28,8 @@ export default class Navbar extends Component{
             </button>
             </div>
             <ul className={this.state.isOpen?"nav=nav-links show-nav":"nav-links"}>
-              
-                <Link to="/">Home</Link>
-                 <Link to="/contact"> Contact</Link>
+            <Link to="/" style={{marginTop:"8px"}}>Home</Link>
+                 <Link to="/contact" style={{marginTop:"8px"}}> Contact</Link>
                 <Signed /> 
                 <Visitor /> 
                

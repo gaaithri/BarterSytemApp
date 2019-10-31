@@ -1,97 +1,52 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default class Footer extends Component {
-    render() {
-        return (
-          <div>
-          <footer className="page-footer font-small pt-4" style={{ background: "#1D2671" }}>
-            <div className="container-fluid text-center text-white text-md-left">
-              <div className="row">
-                <hr className="clearfix w-100 d-md-none pb-3"></hr>
+  render() {
+    return (
+      <div class="container">
+        <footer className="page-footer font-small pt-4" style={{ background: "#504E5A",height:"100px",padding:"5px" }}>
+          <div className="container-fluid text-center text-white text-md-left">
+            <div className="row">
+              <div className="col-md-12">
 
-                <div className="col-md-2 mb-md-0 mb-3" style={{ marginLeft: "200px" }}>
-                  <h5>CUSTOMER CARE</h5>
-                  <ul className="list-unstyled">
-                    <li>
-                      <a className="text-white" href="#">Contact</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">Help</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">GiveAssured</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">About Us
-                     </a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">
-Workplace Giving
-                     </a>
-                    </li>
-                  </ul>
-                </div>
+                <hr style={{ background: "whitesmoke", marginLeft: "120px" }}></hr>
+                <div className="footer-copyright text-center py-3 text-white">© 2019 Copyright:  YouSparkYou
 
-                <div className="col-md-2 mb-md-0 mb-3">
-                  <h5>INFORMATION</h5>
-                  <ul className="list-unstyled">
-                    <li>
-                      <a className="text-white" href="#">Terms & Conditions</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">Policies</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">Blog</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">Collaborations</a>
-                    </li>
-                  </ul>
                 </div>
-                <div className="col-md-2 mb-md-0 mb-3 ">
-                  <h5>LOCATION</h5>
-                  <ul className="list-unstyled text-white">
-                    <li>
-                      <a className="text-white" href="#">Bengaluru</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">Mumbai</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">Singapore</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">Kolkata</a>
-                    </li>
-                    <li>
-                      <a className="text-white" href="#">Delhi</a>
-                    </li>
-                  </ul>
                 </div>
-                <div className="col-md-4 mb-md-0 mb-3 mt-30">
-        
-                  <img src="https://www.freeiconspng.com/uploads/logo-twitter-circle-png-transparent-image-1.png" className="border-round" style={{ width: "50px", height: "50px", float: "left",marginTop:"40px"}}></img>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" className="border-round" style={{ width: "50px", height: "50px", float: "left", marginLeft: "30px",marginTop:"40px"}}></img>
-                  <img src="https://images.vexels.com/media/users/3/137399/isolated/preview/47c9900ae893cbed1e1599ab9c8bcb18-pinterest-icon-logo-by-vexels.png" className="border-round" style={{ width: "50px", height: "50px", float: "left", marginLeft: "30px",marginTop:"40px"}}></img>
-                  <div>
-
+                 
+            </div>
+          </div>
+                <div className="row">
+                  <div className="col-md-12">
 
                   </div>
                 </div>
-              </div>
-            </div>
-            <hr style={{ background: "whitesmoke" }}></hr>
-            <div className="footer-copyright text-center py-3 text-white">© 2019 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/" className="text-white"> USparkYou</a>
-            </div>
-          </footer>
-        </div>
-        )
-    }
+
+               
+            
+        </footer>
+
+      </div>
+    
+
+
+    )
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 

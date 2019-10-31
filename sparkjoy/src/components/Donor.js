@@ -4,6 +4,7 @@ import { Form, Button, Row, Col ,Card} from 'react-bootstrap'
 const Donor = () => {
   return (
     <div>
+      <h1> MAsai</h1>
       <Card >
   
       <Form className="width">

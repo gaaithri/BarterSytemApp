@@ -3,29 +3,37 @@ import {connect} from 'react-redux'
 import {firestoreConnect} from 'react-redux-firebase'
 import {compose} from 'redux'
 import {Link} from 'react-router-dom'
+import {Card,Button} from 'react-bootstrap'
+import ServingReq from './servingreq';
+
 const Productdetails = (props) => {
    const{product}  = props;
    if(product){
        return(
+        <Card bg="light">
+        <Card.Body >
     <div className="container section project-details">
     <div className="card-content">
     <div  className="image">
-        
-         <span className = "card-title">
-         <p> <h5>See details below of the chosen product</h5> </p>
+        <div style={{textAlign:"center"}}>
+         <span className = "card-title" >
+         <p> <h3 >Details of Item you wish to Donate</h3> </p>
                 {product.name}</span>
           <p><span >{product.msg}</span>  </p>
     </div>
   
-    <div className="card-action">
-        <div>Donated by :{product.rname} </div> 
-        <div> Donated on:23 Sept </div>
-        <div> <Link to = {"/thankGiftee"} ><button> Give the Spark </button></Link>
-            
+    <div className="card-action" style={{textAlign:"center"}}>
+        <div><b>Request by :</b> {product.rname}</div> 
+        <div> <b>Requested on: </b>21 Oct</div>
+        <div> <Link to = {"/servingreq"} ><button style={{color:"blue"}}> Give the Spark </button></Link>
+        <div style={{marginBottom:"250px"}}></div>
+        </div>  
         </div>
     </div>
    </div>
 </div>
+</Card.Body>
+</Card>
        ) }
        else{
         return (

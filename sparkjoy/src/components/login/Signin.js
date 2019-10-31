@@ -16,9 +16,9 @@ class Signin extends Component {
   }
   render() {
     return (
-      <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Sign In</h5>
+      <div className="container" style={{height:"400px"}}>
+        <form className="white" onSubmit={this.handleSubmit} style={{marginLeft:"300px",marginTop:"80px",backgroundColor:"rgba(0,0,0,0)"}}>
+          <h5 className="grey-text text-darken-3" style={{marginLeft:"20px"}}>Sign In</h5>
           <div className="input-field">
             <label htmlFor="username">Username</label>
             <input type="username" id='username' onChange={this.handleChange} />

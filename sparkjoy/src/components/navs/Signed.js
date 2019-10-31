@@ -23,7 +23,7 @@ const Signed = () => {
     <NavLink to="/requestcreate">Request Gifts   </NavLink>
   </li>
   <li>
-    <NavLink to="/" className='userlogo'> SPJ</NavLink>
+    <NavLink to="/" className='userlogo'> </NavLink>
   </li>
   </ul>
  )

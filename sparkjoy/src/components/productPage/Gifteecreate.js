@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
-import {connect} from 'react-redux'
-import {createProduct} from '../../store/actions/productAction'
-
+import { connect } from 'react-redux'
+import { createProduct } from '../../store/actions/productAction'
+import { Form, Col, Row, Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+import './Gift.css'
 class Gifteecreate extends Component {
   state = {
     name: '',
     type: '',
     rname: '',
-    msg:''
+    msg: ''
   }
   handleChange = (e) => {
     this.setState({
@@ -16,14 +18,14 @@ class Gifteecreate extends Component {
     })
   }
 
-//   fileChangedHandler=(e) =>{
-//     // var val = "images/"${}
-//     this.setState({
-      
-//       [e.target.id]:"images/"+e.target.value.substring(12)})
-//   }
-// uploadHandler = ()=> {console.log(this.state.image)
-// }
+  //   fileChangedHandler=(e) =>{
+  //     // var val = "images/"${}
+  //     this.setState({
+
+  //       [e.target.id]:"images/"+e.target.value.substring(12)})
+  //   }
+  // uploadHandler = ()=> {console.log(this.state.image)
+  // }
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -32,37 +34,61 @@ class Gifteecreate extends Component {
   }
   render() {
     return (
-      <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Create a New Request</h5>
-          <div className="input-field">
-            <input type="text" id='name' onChange={this.handleChange} />
-            <label htmlFor="name">Product Name</label>
-          </div>
-          <div className="input-field">
-            <textarea type="type" id='type' className="materialize-textarea" onChange={this.handleChange}></textarea>
-            <label htmlFor="type">Product Type</label>
-          </div>
-          <div className="input-field">
-            <input type="text" id='rname' onChange={this.handleChange} />
-            <label htmlFor="name">Receiver Name</label>
-          </div>
-          <div className="input-field">
-            <input type="text" id='msg' onChange={this.handleChange} />
-            <label htmlFor="name">Message</label>
-          </div>
-         
-          <div className="input-field">
-            <button className="btn pink lighten-1">Request</button>
-          </div>
-        </form>
+      <div className="container" >
+        <div className="card">
+          <Card.Body style={{ marginLeft: "300px" }}>
+            <Form onSubmit={this.handleSubmit}>
+              <h5 style={{ marginLeft: "110px", marginTop: "10px", textDecorationStyle: "white" }}>Request for a New Gift</h5>
+              <Form.Label column sm="2">
+                Product Name
+              </Form.Label>
+              <input type="text" id='name' onChange={this.handleChange} style={{ backgroundColor: "rgba(0,0,0,0)" }} />
+              <Col sm="10">
+
+              </Col>
+              <Form.Label column sm="2">
+                Product Type
+             </Form.Label>
+              <input type="text" id='type' onChange={this.handleChange} style={{ backgroundColor: "rgba(0,0,0,0)" }}></input>
+              <Col sm="10">
+
+              </Col>
+
+
+              <Form.Label column sm="2">  Receiver Name  </Form.Label>
+
+
+              <input type="text" id='rname' onChange={this.handleChange} style={{ backgroundColor: "rgba(0,0,0,0)" }} />
+              <Col sm="10">
+
+              </Col>
+
+              <Form.Label column sm="2"> Message  </Form.Label>
+
+
+              <input type="text" id='msg' onChange={this.handleChange} style={{ backgroundColor: "rgba(0,0,0,0)" }} />
+              <Col sm="10">
+
+              </Col>
+
+
+
+
+            <div className="input-field">
+              <button className="btn pink lighten-1" style={{ marginLeft: "200px", color: "blue" }}>Request</button>
+            </div>
+
+            </Form>
+          </Card.Body>
+        </div>
       </div>
+
     )
   }
 }
-const mapDispatchToProps = (dispatch) =>{
+const mapDispatchToProps = (dispatch) => {
   return {
-    createProduct: (product)=>dispatch(createProduct(product))
+    createProduct: (product) => dispatch(createProduct(product))
+  }
 }
-}
-export default connect(null,mapDispatchToProps)(Gifteecreate)
+export default connect(null, mapDispatchToProps)(Gifteecreate)

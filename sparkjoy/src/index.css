@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
    
   background-position: bottom;
-  min-height: 100%;
+ min-height: 500px;
   background: linear-gradien(#C33764,#1D2671);
  
 }

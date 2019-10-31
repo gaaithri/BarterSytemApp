@@ -17,6 +17,7 @@ import DashboardWishList from './components/dashboard/DashboardWishList';
 
 import Thankyou from './components/page/Thankyou'
 import Giverthanks from './components/page/Giverthanks'
+import ServingReq from './components/page/servingreq'
 // import logo from './images/logo.jpeg'
 // import Landingpage from './components/Landingpage';
 class App extends Component {
@@ -35,9 +36,10 @@ class App extends Component {
          <Route path='/donationcreate' component={Donationcreate} />
          <Route path='/create' component={Donationcreate} />
          <Route path='/requestcreate' component={Gifteecreate}/>
-         <Route path='/wishlist' component={DashboardWishList} />
+         <Route path='/wishlist'  component={DashboardWishList}  />
          <Route path='/thankGiftee' component={Thankyou} />
          <Route path='/thankDonor' component={Giverthanks} />
+         <Route Path ='/servingreq' component={ServingReq} />
          </Switch>
        <Footer /> 
      

@@ -4,14 +4,13 @@ import {createItem} from '../../store/actions/itemActions'
 import {Link} from 'react-router-dom'
 import {Form,Row,Col, Card, } from 'react-bootstrap'
 import './Donor.css'
-class Donationcreate extends Component {
+class ServingReq extends Component {
   state = {
     name: '',
     type: '',
     image:null,
     dname: '',
-    createdAt:''
-  
+    msg:''
   }
   handleChange = (e) => {
     this.setState({
@@ -42,7 +41,7 @@ uploadHandler = ()=> {console.log(this.state.image)
 
            <Card.Body style={{marginLeft:"300px",height:"500px"}}>
       <Form onSubmit={this.handleSubmit} >
-        <h5 style={{  marginLeft: "120px", marginTop: "5px" }}>Create a New Donation</h5>
+        <h5 style={{  marginLeft: "80x", marginTop: "1px" }}>Input the items details that you have chosen to donate</h5>
 
     
         <Form.Label column sm="2">
@@ -67,6 +66,14 @@ uploadHandler = ()=> {console.log(this.state.image)
               <Form.Label column sm="2">  Donor Name:  </Form.Label>
               <input type="type" id='dname' className="materialize-textarea" onChange={this.handleChange} style={{backgroundColor:"rgba(0,0,0,0)"}}></input>
               <div>
+
+              <Form.Label column sm="2"> Message  </Form.Label>
+
+
+   <input type="text" id='msg' onChange={this.handleChange} style={{ backgroundColor: "rgba(0,0,0,0)" }} />
+   <Col sm="10">
+
+   </Col>
               <Form.Label column sm="2">  Images  </Form.Label>
              
                   <input type="file"  id='image' name="image" accept="image/*" onChange={this.fileChangedHandler}></input>
@@ -75,7 +82,7 @@ uploadHandler = ()=> {console.log(this.state.image)
          
           <button onClick={this.uploadHandler}>Upload</button> 
                  
-<Link to="/thankDonor" >  <button className="btn pink lighten-1" style={{marginLeft:"300px",color:"blue"}}>Create</button> </Link>
+   <Link to="/thankDonor" >  <button className="btn pink lighten-1" style={{marginLeft:"300px",color:"blue"}}>Create</button> </Link>
           </div>
       </Form>
       </Card.Body>
@@ -90,4 +97,4 @@ const mapDispatchToProps = (dispatch) =>{
     createItem: (item)=>dispatch(createItem(item))
 }
 }
-export default connect(null,mapDispatchToProps)(Donationcreate)
+export default connect(null,mapDispatchToProps)(ServingReq)
